@@ -1,0 +1,116 @@
+{
+    "_readme": [
+        "This file locks the dependencies of your project to a known state",
+        "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
+        "This file is @generated automatically"
+    ],
+    "content-hash": "658fbc57ca57aea4f51ea34351158068",
+    "packages": [
+        {
+            "name": "ebizmarts/mailchimp-lib",
+            "version": "3.0.44",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/ebizmarts/mailchimp-lib.git",
+                "reference": "0f0dbdaccbbe8b2d826508c06649010daf9358c6"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/ebizmarts/mailchimp-lib/zipball/0f0dbdaccbbe8b2d826508c06649010daf9358c6",
+                "reference": "0f0dbdaccbbe8b2d826508c06649010daf9358c6",
+                "shasum": ""
+            },
+            "require": {
+                "ext-curl": "*",
+                "php": ">=5.2.0"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-0": {
+                    "Mailchimp": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Ebizmarts Corp.",
+                    "email": "info@ebizmarts.com",
+                    "homepage": "http://ebizmarts.com",
+                    "role": "Developer"
+                }
+            ],
+            "description": "API client library for the MailChimp",
+            "homepage": "https://github.com/ebizmarts/mailchimp-lib",
+            "keywords": [
+                "api",
+                "email",
+                "mailchimp"
+            ],
+            "support": {
+                "issues": "https://github.com/ebizmarts/mailchimp-lib/issues",
+                "source": "https://github.com/ebizmarts/mailchimp-lib/tree/3.0.44"
+            },
+            "time": "2025-03-14T16:04:58+00:00"
+        },
+        {
+            "name": "mailchimp/mc-magento2",
+            "version": "1.0.30",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/mailchimp/mc-magento2.git",
+                "reference": "d363070fc363e7135b6e41e67712e41037b7d048"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/mailchimp/mc-magento2/zipball/d363070fc363e7135b6e41e67712e41037b7d048",
+                "reference": "d363070fc363e7135b6e41e67712e41037b7d048",
+                "shasum": ""
+            },
+            "require": {
+                "ebizmarts/mailchimp-lib": ">=3.0.27"
+            },
+            "type": "magento2-module",
+            "autoload": {
+                "files": [
+                    "registration.php"
+                ],
+                "psr-4": {
+                    "Ebizmarts\\MailChimp\\": ""
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "OSL-3.0",
+                "AFL-3.0"
+            ],
+            "authors": [
+                {
+                    "name": "Ebizmarts Corp",
+                    "email": "mailchimp@ebizmarts-desk.zendesk.com",
+                    "homepage": "http://ebizmarts.com"
+                }
+            ],
+            "description": "Connect MailChimp with Magento",
+            "support": {
+                "email": "mailchimp@ebizmarts-desk.zendesk.com",
+                "forum": "http://ebizmarts.com/forums/view/6",
+                "issues": "https://github.com/mailchimp/mc-magento2/issues",
+                "source": "https://github.com/mailchimp/mc-magento2/tree/develop",
+                "wiki": "https://connect.mailchimp.com/integrations/magento"
+            },
+            "time": "2018-09-18T16:10:55+00:00"
+        }
+    ],
+    "packages-dev": [],
+    "aliases": [],
+    "minimum-stability": "stable",
+    "stability-flags": {},
+    "prefer-stable": false,
+    "prefer-lowest": false,
+    "platform": {},
+    "platform-dev": {},
+    "plugin-api-version": "2.6.0"
+}
