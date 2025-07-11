@@ -1,0 +1,21 @@
+src/
+
+# Magento specific
+/app/etc/env.php
+/app/etc/config.php
+/var/*
+/pub/media/*
+/pub/static/*
+/generated/*
+/vendor/*
+/.htaccess
+/.php_cs.cache
+/.user.ini
+/node_modules/
+/composer.lock
+
+# General
+*.log
+*.sql
+*.zip
+*.tar.gz
