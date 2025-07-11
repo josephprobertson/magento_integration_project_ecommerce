@@ -1,8 +1,15 @@
 {
     "name": "magento/project-community-edition",
     "description": "Magento 2.4.8 for PRADCO demo",
+    "type": "magento2-project",
+    "version": "2.4.8",
+    "license": [
+        "OSL-3.0",
+        "AFL-3.0"
+    ],
     "require": {
-        "magento/product-community-edition": "2.4.8"
+        "magento/product-community-edition": "2.4.8",
+        "php": "~8.1.0||~8.2.0"
     },
     "repositories": [
         {
@@ -13,6 +20,29 @@
     "config": {
         "platform": {
             "php": "8.2.0"
-        }
+        },
+        "allow-plugins": {
+            "magento/*": true,
+            "composer/installers": true,
+            "laminas/*": true,
+            "cweagans/composer-patches": true,
+            "php-http/discovery": true
+        },
+        "minimum-stability": "dev",
+        "optimize-autoloader": true
+    },
+    "autoload": {
+        "psr-4": {
+            "Magento\\": "app/code/Magento/"
+        },
+        "psr-0": {
+            "": [
+                "app/code/",
+                "generated/code/"
+            ]
+        },
+        "files": [
+            "app/etc/NonComposerComponentRegistration.php"
+        ]
     }
 }
